@@ -2,7 +2,9 @@
 
 <!-- <img class="logo" src="img/logo.svg" style="height: 1.75in;"/> -->
 
-![the tuxink logo](img/logo.svg | height=100)
+<!--  ![](img/logo.svg | height = 100) -->
+<img src="./img/logo.svg" height=250>
+
 <p style="font-size: x-large;"> - = | &#128190;&#32;&#128214;&#32;&#128218;&#32;&#128212;&#32;&#128246; | = - </p>
 
 ## What is this project?
@@ -21,19 +23,7 @@ This is an open hardware eink device with general purpose usage in mind. Tuxink 
 - Use pushbuttons for navigation.
 - Use a CLI OS for most compatibility.
 
-<!-- <div>
-  <img class="mockup" src="img/mockup.svg"/>
-  <style>
-.mockup{
-  /* background-color:transp; */
-  /* color: green; */
-  /* fill: green; */
-  width: 3in;
-}
-</style>
-  </div> -->
-
-![tuxink book mockup](img/mockup.svg | height=100)
+<img src="./img/mockup.svg" height=250>
 
 ## Minimum Hardware Requirements
 
