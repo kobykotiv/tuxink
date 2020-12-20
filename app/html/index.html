@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - HomeScreenIdea</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- This Whole Thing is made of recursive containers -->
+
+<div id="epd" class="wrapper">
+  <div class="first-section">
+    <div id="status-bar" class="container">
+      <!--       <a class="nav-link icon-share" href="#"></a> -->
+      <!--       <a class="nav-link icon-menu" href="#"></a> -->
+    </div>
+
+    <!--   <div> -->
+    <div class="container navbar nav-top navbar-expand sticky-top">
+      <ul id="myDIV" class="navbar-nav top">
+        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="#">Books</a>
+        <a class="nav-link" href="#">Audiobooks</a>
+        <a class="nav-link" href="#">News</a>
+        <a class="nav-link" href="#">Podcasts</a>
+        <a class="nav-link" href="#">Music</a>
+        <a class="nav-link" href="#">Apps</a>
+        <a class="nav-link" href="#">Settings</a>
+      </ul>
+    </div>
+  </div>
+
+  <div id="awesome-content">
+    <div class="fluff">
+      <div id="demo-section">
+
+      </div>
+      <!--       <span class="lower-content"></span> -->
+    </div>
+
+  </div>
+
+  <nav id="dock" class="container navbar sticky-bottom justify-content-around">
+    <!--   <div class="d-flex navbar-expand "> -->
+    <a class="nav-link icon-arrow-left-circle" href="#"></a>
+    <a class="nav-link icon-star" href="#"></a>
+    <br>
+    <a class="nav-link icon-share" href="#"></a>
+    <a class="nav-link icon-menu" href="#"></a>
+    <!--   </div> -->
+  </nav>
+  <!--   </div> -->
+
+</div>
+
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("myDIV");
+  var btns = header.getElementsByClassName("nav-link");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("selected");
+      current[0].className = current[0].className.replace(" selected", "");
+      this.className += " selected";
+    });
+  }
+</script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script type="module" src="./script.js"></script>
+
+</body>
+</html>

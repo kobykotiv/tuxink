@@ -1,0 +1,30 @@
+{
+    "name": "app",
+    "version": "1.0.0",
+    "description": "placeholder",
+    "main": "app.js",
+    "dependencies": {
+        "connect-livereload": "^0.6.1",
+        "express": "^4.17.1",
+        "livereload": "^0.9.1",
+        "nodemon": "^2.0.6",
+        "pug": "^3.0.0"
+    },
+    "devDependencies": {
+        "browser-sync": "^2.26.13"
+    },
+    "scripts": {
+        "dev": "nodemon app/app.js",
+        "ui": "browser-sync start --config app/bs-config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kobykotiv/tuxink.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kobykotiv/tuxink/issues"
+    },
+    "homepage": "https://github.com/kobykotiv/tuxink#readme"
+}
