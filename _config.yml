@@ -5,3 +5,4 @@ show_downloads: false
 google_analytics:
 # theme: jekyll-theme-minimal
 remote_theme: dracula/gh-pages
+excerpt_separator: "<!-- readmore -->"
