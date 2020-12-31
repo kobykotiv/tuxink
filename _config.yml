@@ -1,5 +1,5 @@
 title: Tuxink
-logo: /assets/img/logo.png
+logo: false #/assets/img/logo.png
 description: Open ePaper Hardware
 show_downloads: false
 google_analytics:
