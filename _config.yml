@@ -1,8 +1,12 @@
 title: Tuxink
-logo: false #/assets/img/logo.png
+logo: assets/svg/logomin.svg
 description: Open ePaper Hardware
-show_downloads: false
+show_downloads: true
 google_analytics:
 # theme: jekyll-theme-minimal
-remote_theme: "dracula/gh-pages"
+theme: jekyll-theme-minimal
+# remote_theme: "dracula/gh-pages"
 excerpt_separator: "<!-- readmore -->"
+
+collections:
+  blog: _posts
