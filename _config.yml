@@ -1,12 +1,13 @@
 title: Tuxink
 logo: assets/svg/logomin.svg
 description: Open ePaper Hardware
-show_downloads: true
+show_downloads: false
 google_analytics:
 # theme: jekyll-theme-minimal
 theme: jekyll-theme-minimal
 # remote_theme: "dracula/gh-pages"
-excerpt_separator: "<!-- readmore -->"
+excerpt_separator: <!--more-->
+paginate: 5
 
-collections:
-  blog: _posts
+plugins:
+  - jekyll-figure

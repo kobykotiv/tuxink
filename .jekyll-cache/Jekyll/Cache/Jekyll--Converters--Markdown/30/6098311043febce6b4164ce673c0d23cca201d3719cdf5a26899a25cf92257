@@ -1,0 +1,21 @@
+I"k<h1 id="week0---thejourneybegins">Week 0 - The Journey Begins</h1>
+
+<h2 id="cute-pugs">Cute pugs</h2>
+
+<p>I’m using pug.js as a js framework</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<p><img src="assets/img/p/001/20201228_231000.jpg" alt="My Cool Testing Stack" /></p>
+
+<ul>
+  <li></li>
+  <li>Raspberry Pi 3 (Model A+)</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo</span> sh ./init.sh -s
+
+<span class="nv">$ </span><span class="nb">sudo</span> sh ./init.sh --service-mode
+</code></pre></div></div>
+
+:ET
