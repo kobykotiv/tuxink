@@ -3,9 +3,9 @@
 <!-- <img class="logo" src="img/logo.svg" style="height: 1.75in;"/> -->
 
 <!--  ![](img/logo.svg | height = 100) -->
-<img src="./img/logo.svg" height=250>
+<!-- <img src="./img/logo.svg" height=250> -->
 
-<p style="font-size: x-large;"> - = | &#128190;&#32;&#128214;&#32;&#128218;&#32;&#128212;&#32;&#128246; | = - </p>
+<!-- <p style="font-size: x-large;"> - = | &#128190;&#32;&#128214;&#32;&#128218;&#32;&#128212;&#32;&#128246; | = - </p> -->
 
 ## What is this project?
 
@@ -23,7 +23,7 @@ This is an open hardware eink device with general purpose usage in mind. Tuxink 
 - Use pushbuttons for navigation.
 - Use a CLI OS for most compatibility.
 
-<img src="./img/mockup.svg" height=250>
+<!-- <img src="./img/mockup.svg" height=250> -->
 
 ## Minimum Hardware Requirements
 
