@@ -2,18 +2,22 @@
 layout: default
 ---
 
-<div class="posts">
+
+
+<div id="blog" class="posts">
     {% for post in site.posts %}
-    <article class="post">
+    <article class="blog">
 
-        <h1><a href="{{ site.baseurl }}{{ post.url }}"> &#10070; <i>{{ post.title }}</i></a></h1>
+        <h1><span href="{{ site.baseurl }}{{ post.url }}"> &#10070; <i>{{ post.title }}</i></span></h1>
+        <!-- <h1><a href="{{ site.baseurl }}{{ post.url }}"> &#10070; <i>{{ post.title }}</i></a></h1> -->
 
-        <div class="entry">
-            {{ post.excerpt }}
+        <div class="markdown-body">
+            {{ post.content }}
         </div>
 
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+        <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
     </article>
-    <hr /><br />
+    <hr />
+    <!-- <hr /><br /> -->
     {% endfor %}
 </div>

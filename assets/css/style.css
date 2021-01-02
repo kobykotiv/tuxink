@@ -299,7 +299,7 @@ h6 {
 /* table, */
 /* pre, */
 /* dl { */
-  /* margin: 0 0 20px; */
+/* margin: 0 0 20px; */
 /* } */
 h1,
 h2,
@@ -329,7 +329,7 @@ a {
   text-decoration: underline;
 }
 
-.post > h1 a {
+.entries > h1 {
   color: #26b999;
   text-decoration: none;
 }
@@ -363,6 +363,9 @@ pre {
     Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
   color: #fff;
 }
+
+/* style for code */
+
 pre {
   padding: 8px 15px;
   /* background: #f8f8f8; */
@@ -402,7 +405,7 @@ header ul {
   padding: 0;
   background: #f4f4f4;
   border-radius: 5px;
-  border: 1px solid #e0e0e0;
+  /* border: 1px solid #e0e0e0; */
   width: 270px;
 }
 header li {
@@ -458,9 +461,10 @@ small {
 }
 hr {
   border: 0;
-  background: #e5e5e5;
-  height: 1px;
-  margin: 0 0 20px;
+  /* background: #e5e5e5; */
+  border-bottom: 1px dashed #303030;
+  /* height: 1px; */
+  /* margin: 0 0 20px; */
 }
 footer {
   width: 270px;
@@ -486,7 +490,7 @@ footer {
   }
   section {
     /* border: 1px solid #e5e5e5; */
-    border-width: 1px 0;
+    /* border: 1px dashed #303030; */
     padding: 20px 0;
     margin: 0 0 20px;
   }
@@ -572,6 +576,3 @@ footer {
   }
 }
 
-/* * {
-  border: dashed gray;
-} */
