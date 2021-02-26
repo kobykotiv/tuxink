@@ -1,13 +1,45 @@
+//- index
 extends layout
 
 block layout-content
   div.View
-    h1.Banner WHATABYTE
-    div.Message
-      div.Title
-        h3 Making the Best
-        h1 FUCK YOU 2020
-      span.Details Access the WHATABYTE Team Portal
-    div.NavButtons
-      a(href="/user")
-          div.NavButton Just dive in!
+    nav.NavButtonRightBar
+      - var maxx = 10;
+      - var n = 0;
+      while n < maxx
+        span
+          =n
+        
+        if Leprettypaths
+          a(href= parentpath +'/'+ Lepaths[n])
+            =Leprettypaths[n]
+        else if Lepaths
+          a(href= parentpath +'/'+ Lepaths[n])
+            =Lepaths[n]
+        else
+          a()
+            =''
+
+        -n++ // do some iteration
+        //- p.NavButton.Right
+          //- image filename is "hardstring $number $namespace $fileextention"
+    div.Status.BarTop !{ppath}
+    //- This is reference 
+    //- div.HomeScreen
+
+    if doc2open != null
+      div.WidgetArea
+        // make the src a variable.
+        div
+          //- iframe
+          iframe#readerepub(src="https://futurepress.github.io/epubjs-reader/", frameborder="0")
+    else
+      // if no document is loaded: unload widgets
+
+
+    div.Status.BarBot
+      if footercaption
+        =footercaption
+      else
+        a(href= '/._Library' ).Status
+          = 'Library'
