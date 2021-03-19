@@ -14,3 +14,4 @@ GUI - how it looks so far.
   - [ ] epub
   - [ ] mobi
   - [x] pdf(built in browser support)
+
