@@ -1,54 +1,34 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html>
   {% include head.html %}
   <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+    {% include nav.html %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-
-        {% if site.logo %}
-
-        <img class="logo" src="{{site.logo | relative_url}}">
-
-        {% endif %}
-        
-        <nav>
-          <a href="/about">About</a>
-        </nav>
-
-      </header>
-      <section>
-
-        {{ content }}
-
-      </section>
-      <footer class="centered">
-        {% if site.github.is_project_page %}
-        <p ><small>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name
-              }}</a></small></p>
-        {% endif %}
-        <a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a>
-        <!-- <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
-      </footer>
-    </div>
-    <script src="{{ " /assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
-    </script>
+    {% if page.toc==true %}
+      <aside class="toc">
+        {% include toc.html html=content %}
+      </aside>
     {% endif %}
-    <!-- <script type="text/javascript" src="{{site.assets}}/js/lightbox.js"></script> -->
-    <!-- <link rel="stylesheet" href="{{site.assets}}/js/lightbox.css"> -->
-    
+
+    <div id="main" role="main" class="wrapper-content">
+      <div class="container">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include analytics.html %}
   </body>
+
+  {% if page.toc==true %}
+  <script>
+    document.getElementById("main").classList.add("withtoc");
+  </script>
+  {% endif %}
+
+  <div class="wrapper-footer-mobile">
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+
 
 </html>
