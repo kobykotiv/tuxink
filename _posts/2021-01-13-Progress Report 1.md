@@ -7,29 +7,30 @@ pinned: false
 postid: "001"
 ---
 
-# Some Constrained Design
+Making the design practical! Each physical button is numbered corresponds to one of 10 items in a list.
 
-## UI & UX
-
-Each physical numbered button corresponds to one of 10 items in a list.
+[![Screenshot of the UI so far]({{ site.assets | relative_url }}/{{ page.postid }}/books.png)]({{ site.assets | relative_url }}{{ page.postid }}/books.png)
 
 During Benchmark tests of my [waveshare epd V1](https://www.waveshare.com/wiki/7.5inch_e-Paper_HAT) refresh time can be over half a minute.
 
-Quick Dirty Prototype
+<!-- Quick Dirty Prototype -->
+
 [![Quick and Dirty UI Prototype]({{ site.assets | relative_url }}/{{ page.postid }}/screenshot0.png)]({{ site.assets | relative_url }}{{ page.postid }}/screenshot0.png)
 
-Cool Demo Video
+<!-- Cool Demo Video -->
+
 [![Cool Demo Video]({{ site.assets | relative_url }}/{{ page.postid }}/demo.ogv)]({{ site.assets | relative_url }}{{ page.postid }}/demo.ogv)
 
-Directory in Powershell
+<!-- Directory in Powershell -->
+
 [![Directory in Powershell]({{ site.assets | relative_url }}/{{ page.postid }}/fs.png)]({{ site.assets | relative_url }}{{ page.postid }}/fs.png)
 
 ## Goals
 
-- [x] Write a quick and dirty UI prototype
-  - [x] Based on [PRS-505](#References)
-- [x] Begin fundamental UI
-- [ ] Complete 0th Prototype
+- Write a quick and dirty UI prototype
+  - Based on [PRS-505](#References)
+- Begin fundamental UI
+- Complete 0th Prototype
 
 <!--more-->
 
